@@ -1,0 +1,37 @@
+<div class="logo">
+  <div class="logo--title">Synesthesia</div>
+  <div class="logo--subtitle">An application that lets you see your favorite songs!</div>
+</div>
+
+<div class="gap-20"></div>
+
+<div class="main">
+  <div class="interaction">
+    <div class="upload" *ngIf="specImage == null" (click)="file.click()">
+      Please, upload a music! <button mat-icon-button color="basic"><mat-icon>file_upload</mat-icon></button>
+      <input #file hidden="true" type="file" onclick="this.value=null" (change)="handleFile($event)" accept=".mp3"/>
+    </div>
+    <div class="song" *ngIf="specImage != null" (click)="reset()">
+      <span class="song-name">{{filename}}</span>
+      <button mat-icon-button color="basic"><mat-icon>restart_alt</mat-icon></button>
+    </div>
+  </div>
+  <div class="gap-10"></div>
+  <mat-progress-bar mode="indeterminate" color="accent" *ngIf="isLoading()"></mat-progress-bar>
+  <div class="gap-20"></div>
+  <div class="view">
+    <div class="view--image spec">
+      <img [src]="specImage" alt="Place image title" *ngIf="specImage">
+    </div>
+    <div class="view--image wav">
+      <img [src]="wavImage" alt="Place image title" *ngIf="wavImage">
+    </div>
+  </div>
+
+</div>
+
+<div class="credit">
+  <div>
+    Desenvolvido por mteixeira
+  </div>
+</div>

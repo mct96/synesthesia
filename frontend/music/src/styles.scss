@@ -1,0 +1,18 @@
+
+html, body { height: 100%; }
+body {
+    margin: 0;
+    font-family: "IBM Plex mono", Roboto, "Helvetica Neue", sans-serif;
+    background-color: #394C5A;
+    color: white;
+}
+
+@font-face {
+    font-family: hurricane;
+    src: url(assets/fonts/Hurricane-Regular.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: dmsans;
+    src: url(assets/fonts/DMSans-Regular.ttf) format("truetype");
+  }

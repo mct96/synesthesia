@@ -1,0 +1,104 @@
+
+.logo {
+    position: relative;
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #1E221F;
+}
+
+.logo--title {
+    text-align: center;
+    padding: 30px 0px;
+    font-size: 48px;
+
+    font-family: dmsans;
+}
+
+.logo--subtitle {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 3px;;
+    font-weight: 200;
+}
+
+.main {
+    position: relative;
+    left: 25%;
+    width: 50%;
+}
+
+.interaction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload, .song {
+    width: fit-content;
+    padding: 30px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #4c697eb0;
+}
+
+
+.upload {
+    text-align: center;
+}
+
+.song {
+    text-align: center;
+}
+
+.view {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+}
+
+.view--image {
+    width: calc(50% - 5px);
+}
+
+.view--image > img {
+    width: 100%;
+}
+
+
+.upload--button {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100px;
+    height: 50px;
+    background-color: #32393A;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.App {
+
+    position: relative;
+
+    height: 100%;
+    width: 100%;
+}
+
+#input-upload {
+    opacity: 0;
+}
+
+.gap-10 {display:block; height: 10px;}
+.gap-20 {display:block; height: 20px;}
+
+.credit {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    border-top: 1px solid white;
+    padding: 0 25%;
+    box-sizing: border-box;
+
+}
